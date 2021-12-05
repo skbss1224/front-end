@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>validation basic</title>
+<script type="text/javascript">
+function valid()
+{
+	var a=document.forms['sasi'].pass.value;
+	var b=document.forms['sasi'].conpass.value;
+	if(a!=b)
+		{
+			alert("password missmatch");
+		}
+	else
+		{
+			window.location.assign("bugatti.html");
+		}
+}
+</script>
+</head>
+<body>
+<form name="sasi">
+	<input type="password" name="pass">
+	<input type="password" name="conpass">
+	<input type="button" onclick="valid()" value="validation">
+</form>
+</body>
+</html>
